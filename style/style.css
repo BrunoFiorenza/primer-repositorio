@@ -253,7 +253,7 @@ button{
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
+    width: 85%;
     cursor: pointer;
     background-color: #ff7099;
     border: solid 1px #f7e9e9;
@@ -291,7 +291,9 @@ box-shadow: inset 1px 1px 1px #121212;
 @media (max-width:600px){
     .p-produc{
         font-size: 1.2rem;
-        padding: 10px;
+        padding: 5px;
+        line-height: normal;
+        letter-spacing: normal;
     }
     .main-produc{
         padding: 30px;
