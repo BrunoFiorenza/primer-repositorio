@@ -67,22 +67,24 @@ li:hover{
 }
 h1{
     text-align: center;
-    font-size: 2rem;
-    color: #ff7099;
-    text-transform: uppercase;   
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    z-index: 1000;   
 }
 .main-inicio{
     background-color: #f7e9e9;
-    padding: 50px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 0px;
 }
 .inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding:50px
 }
 footer{
     background-color: #f7c0cb;
@@ -159,10 +161,6 @@ footer{
     li{
         padding: 5px;
     }
-    .main-inicio{
-        padding: 30px;
-        gap: 30px;
-    }
 }
 
 @media (max-width:550px){
@@ -187,8 +185,6 @@ footer{
 .main-Nosotros{
     display: flex;
     flex-direction: column;
-    padding: 50px;
-    gap: 50px;
     background-color: #f7e9e9;
 }
 .imgNosotros{
@@ -206,11 +202,15 @@ footer{
     font-size: 1.5rem;
     text-align: center;
 }
-.main-produc{
+.biografia{
     display: flex;
     flex-direction: column;
     padding: 50px;
-    gap: 50px;
+    gap:50px
+}
+.main-produc{
+    display: flex;
+    flex-direction: column;
     background-color: #f7e9e9;
 }
 .Productos{
@@ -218,6 +218,7 @@ footer{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 50px;
+    padding: 50px;
 }
 .img-produc{
     width: 100%;
@@ -295,10 +296,6 @@ box-shadow: inset 1px 1px 1px #121212;
         line-height: normal;
         letter-spacing: normal;
     }
-    .main-produc{
-        padding: 30px;
-        gap: 30px;
-    }
 }
 
 @media (max-width:900px){
@@ -306,11 +303,69 @@ box-shadow: inset 1px 1px 1px #121212;
         font-size: 1.2rem;
         padding: 25px;
     }
-    .main-Nosotros{
-        padding: 25px;
-        gap: 25px;
-    }
     .imgNosotros{
         width: 150px;
     }
+}
+
+.main-contacto{
+    background-color: #f7e9e9;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-ubicacion{
+    background-color: #f7e9e9;
+    display: flex;
+    flex-direction: column;
+}
+
+.portada{
+    background-image: url(../img/portada.jpg);
+    height: 72vh;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    border: solid 1px #ff7099;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.p-portada{
+    padding: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+.publicaciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+    padding: 50px;
+}
+.publicacion{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:900px){
+    .publicaciones{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 25px;
+        padding: 25px;
+    }
+    .publicacion{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:400px){
+    .publicaciones{
+        width: 90%;
+    }
+}
+.mapa{
+    padding: 50px;
 }
