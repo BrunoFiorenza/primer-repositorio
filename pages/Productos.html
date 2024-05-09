@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4cb147f19a.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <figure>
             <a href="../index.html">
                 <img id="logo" src="../img/Captura de pantalla 2024-03-18 205150.png" alt="logo de dulcedai">
@@ -39,7 +41,7 @@
         </nav>
     </header>
     <main class="main-produc">
-        <section class="portada">
+        <section class="portada" data-aos="fade-down">
             <h1>
                 Productos
             </h1>
@@ -48,7 +50,7 @@
             </p>
             </section>
         <section class="Productos">
-            <div class="Lista">
+            <div class="Lista" data-aos="zoom-in-right">
                 <img src="../img/Captura de pantalla 2024-04-01 185252.png" alt="Producto" class="img-produc">
                 <div class="info-produc">
                     <p class="p-produc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolore nulla eius rem doloremque dolores provident quibusdam. Temporibus exercitationem quo quod inventore. Laborum itaque alias doloribus eligendi consectetur soluta aspernatur.</p>
@@ -57,7 +59,7 @@
                     </button>
                 </div>
             </div>
-            <div class="Lista">
+            <div class="Lista" data-aos="zoom-in-left">
                 <img src="../img/Captura de pantalla 2024-04-01 185304.png" alt="Producto" class="img-produc">
                 <div class="info-produc">
                     <p class="p-produc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore accusantium vitae molestiae nobis, quia cum consectetur alias debitis minima aut, temporibus quae laudantium quasi quidem ducimus ad consequuntur facilis similique.</p>
@@ -66,7 +68,7 @@
                     </button>
                 </div>
             </div>
-            <div class="Lista">
+            <div class="Lista" data-aos="zoom-in-right">
                 <img src="../img/Imagen de WhatsApp 2024-04-12 a las 09.41.19_0b5ee54f.jpg" alt="Producto" class="img-produc">
                 <div class="info-produc">
                     <p class="p-produc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam perspiciatis enim adipisci molestias accusantium ipsam ullam, eligendi dolore exercitationem aut totam cumque, eveniet tempora omnis incidunt! Sequi, possimus consequuntur.</p>
@@ -75,7 +77,7 @@
                     </button>
                 </div>
             </div>
-            <div class="Lista">
+            <div class="Lista" data-aos="zoom-in-left">
                 <img src="../img/Imagen de WhatsApp 2024-04-12 a las 09.41.19_f982b529.jpg" alt="Producto" class="img-produc">
                 <div class="info-produc">
                     <p class="p-produc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos dolor saepe cum neque enim nisi obcaecati dicta quasi. Officiis esse necessitatibus velit excepturi pariatur assumenda ipsum architecto hic odio.</p>
@@ -84,7 +86,7 @@
                     </button>
                 </div>
             </div>
-            <div class="Lista">
+            <div class="Lista" data-aos="zoom-in-right">
                 <img src="../img/Imagen de WhatsApp 2024-04-12 a las 09.41.20_f3124f5a.jpg" alt="Producto" class="img-produc">
                 <div class="info-produc">
                     <p class="p-produc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos dolor saepe cum neque enim nisi obcaecati dicta quasi. Officiis esse necessitatibus velit excepturi pariatur assumenda ipsum architecto hic odio.</p>
@@ -93,7 +95,7 @@
                     </button>
                 </div>
             </div>
-            <div class="Lista">
+            <div class="Lista" data-aos="zoom-in-left">
                 <img src="../img/Imagen de WhatsApp 2024-04-12 a las 09.41.19_0b5ee54f.jpg" alt="Producto" class="img-produc">
                 <div class="info-produc">
                     <p class="p-produc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eos dolor saepe cum neque enim nisi obcaecati dicta quasi. Officiis esse necessitatibus velit excepturi pariatur assumenda ipsum architecto hic odio.</p>
@@ -104,9 +106,13 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer data-aos="fade-up">
         <a href="http://www.instagram.com/dulceedai/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.instagram.com/dulceedai/" target="_blank" class="ig">@Dulcedai</a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 .main-produc{
     display: flex;
     flex-direction: column;
-    background-color: #f7e9e9;
+    background-color: $principal;
     
     .Productos{
         display: grid;
@@ -22,12 +22,13 @@
         .Lista{
             display: flex;
             padding: 10px;
-            background-color: #f7c0cb;
-            border: solid 2px #ff7099;
+            background-color: $secundario;
+            border: solid 2px $terciario;
             border-radius: 50px;
             &:hover{
                 scale: 1.05;
                 transition: 0.5s;
+                box-shadow: 10px 10px  10px #1212128a
             }
             @media (max-width:800px){
                 display: flex;
@@ -40,7 +41,7 @@
             .img-produc{
                 width: 100%;
                 border-radius: 50px;
-                border: solid 1px #ff7099;
+                border: solid 1px $terciario;
                 object-fit: cover;
                 max-width: 300px;
                 @media (max-width:800px){
@@ -73,12 +74,12 @@
                     border-radius: 10px;
                     width: 85%;
                     cursor: pointer;
-                    background-color: #ff7099;
-                    border: solid 1px #f7e9e9;
-                    color: #f7e9e9;
-                    box-shadow: 1px 1px 1px #121212;
+                    background-color: $terciario;
+                    border: solid 1px $principal;
+                    color: $principal;
+                    box-shadow: 1px 1px 1px black;
                     &:active{
-                    box-shadow: inset 1px 1px 1px #121212;
+                    box-shadow: inset 1px 1px 1px black;
                     }
                 }
             }

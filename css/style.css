@@ -7,9 +7,13 @@
   font-size: 16px;
 }
 
-header {
+body {
+  overflow-x: hidden;
   background-color: #f7c0cb;
-  border: solid 1px #ff7099;
+}
+
+header {
+  background: linear-gradient(#ff7099, #f7c0cb);
 }
 header figure {
   text-align: center;
@@ -83,7 +87,7 @@ header figure #logo {
 }
 .navbar .ul-navbar .li-navbar {
   list-style: none;
-  background-color: #f7e9e9;
+  background: #fadfe4;
   border-radius: 10px;
   border: solid 1px #f7e9e9;
 }
@@ -100,23 +104,23 @@ header figure #logo {
 }
 
 footer {
-  background-color: #f7c0cb;
+  background: linear-gradient(#f7c0cb, #ff7099);
   text-align: center;
   padding: 50px;
   border: solid 1px #ff7099;
 }
 footer .ig {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 1.5rem;
 }
 footer .fa-brands {
-  color: black;
+  color: white;
   font-size: 1.5rem;
 }
 
 .main-inicio {
-  background-color: #f7e9e9;
+  background-color: #fadfe4;
   padding: 0px;
   display: flex;
   flex-direction: column;
@@ -143,7 +147,7 @@ footer .fa-brands {
   box-shadow: 10px 10px 10px #f7c0cb;
 }
 .main-inicio .inicio .tarjeta-inicio:hover {
-  scale: 1;
+  scale: 1.01;
   box-shadow: 10px 10px 10px rgba(18, 18, 18, 0.5411764706);
   transition: 0.5s;
   background-color: #ff7099;
@@ -193,7 +197,7 @@ footer .fa-brands {
 }
 
 .main-contacto {
-  background-color: #f7e9e9;
+  background-color: #fadfe4;
   display: flex;
   flex-direction: column;
 }
@@ -230,7 +234,7 @@ footer .fa-brands {
 }
 
 .main-ubicacion {
-  background-color: #f7e9e9;
+  background-color: #fadfe4;
   display: flex;
   flex-direction: column;
 }
@@ -246,7 +250,7 @@ footer .fa-brands {
 .main-Nosotros {
   display: flex;
   flex-direction: column;
-  background-color: #f7e9e9;
+  background-color: #fadfe4;
 }
 .main-Nosotros .biografia {
   display: flex;
@@ -266,7 +270,7 @@ footer .fa-brands {
 .main-Nosotros .biografia .fig-nos .img-Nosotros {
   width: 200px;
   border-radius: 100px;
-  border: solid 2px #121212;
+  border: solid 2px black;
 }
 @media (max-width: 900px) {
   .main-Nosotros .biografia .fig-nos .img-Nosotros {
@@ -299,7 +303,7 @@ footer .fa-brands {
 .main-produc {
   display: flex;
   flex-direction: column;
-  background-color: #f7e9e9;
+  background-color: #fadfe4;
 }
 .main-produc .Productos {
   display: grid;
@@ -331,6 +335,7 @@ footer .fa-brands {
 .main-produc .Productos .Lista:hover {
   scale: 1.05;
   transition: 0.5s;
+  box-shadow: 10px 10px 10px rgba(18, 18, 18, 0.5411764706);
 }
 @media (max-width: 800px) {
   .main-produc .Productos .Lista {
@@ -381,12 +386,12 @@ footer .fa-brands {
   width: 85%;
   cursor: pointer;
   background-color: #ff7099;
-  border: solid 1px #f7e9e9;
-  color: #f7e9e9;
-  box-shadow: 1px 1px 1px #121212;
+  border: solid 1px #fadfe4;
+  color: #fadfe4;
+  box-shadow: 1px 1px 1px black;
 }
 .main-produc .Productos .Lista .info-produc .boton-producto:active {
-  box-shadow: inset 1px 1px 1px #121212;
+  box-shadow: inset 1px 1px 1px black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,9 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4cb147f19a.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-    <header>
+    <header data-aos="fade-down">
         <figure>
             <a href="../index.html">
                 <img id="logo" src="../img/Captura de pantalla 2024-03-18 205150.png" alt="logo de dulcedai">
@@ -39,7 +41,7 @@
         </nav>
     </header>
     <main class="main-Nosotros">
-        <section class="portada">
+        <section class="portada" data-aos="fade-down">
             <h1>
                 Nosotros
             </h1>
@@ -49,11 +51,11 @@
         </section>
         <div class="biografia">
             <div>
-                <figure class="fig-nos">
+                <figure class="fig-nos" data-aos="zoom-in">
                     <img src="../img/Captura de pantalla 2024-03-18 205150.png" alt="Fotodeperfil" class="img-Nosotros">
                 </figure>
             </div>
-            <div>
+            <div data-aos="zoom-in">
                 <p class="p-nos">
                 ¡Hola! Soy Daiana, una apasionada de la pastelería con un amor especial por crear dulces deliciosos que alegran el corazón y el alma. Desde que era niña, siempre me ha fascinado el mundo de la repostería, y ahora estoy siguiendo mi sueño de convertir mi pasión en mi profesión.
                 Actualmente, me encuentro inmersa en el emocionante mundo de la pastelería, estudiando y perfeccionando mis habilidades día tras día. Mi objetivo es no solo deleitar los paladares de quienes prueban mis creaciones, sino también transmitir la alegría y la calidez que se siente al disfrutar de un dulce momento.
@@ -64,9 +66,13 @@
             </div>
         </div>
     </main>
-    <footer>
+    <footer data-aos="fade-up">
         <a href="http://www.instagram.com/dulceedai/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.instagram.com/dulceedai/" target="_blank" class="ig">@Dulcedai</a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 .main-Nosotros{
     display: flex;
     flex-direction: column;
-    background-color: #f7e9e9;
+    background-color: $principal;
     
     .biografia{
         display: flex;
@@ -19,7 +19,7 @@
             .img-Nosotros{
                 width: 200px;
                 border-radius: 100px;
-                border: solid 2px #121212;
+                border: solid 2px black;
                 @media (max-width:900px){
                     width: 150px;
                 }
@@ -28,8 +28,8 @@
         
         .p-nos{
             padding: 50px;
-            background-color: #f7c0cb;
-            border: solid 1px #ff7099;
+            background-color: $secundario;
+            border: solid 1px $terciario;
             font-size: 1.5rem;
             text-align: center;
             border-radius: 10px;
