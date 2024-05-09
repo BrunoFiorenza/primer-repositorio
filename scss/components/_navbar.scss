@@ -1,0 +1,48 @@
+.navbar{
+    padding: 20px;
+    @media (max-width:900px){
+        padding: 5px
+    }
+    
+    .ul-navbar{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        @media (max-width:900px){
+            gap: 18px;
+            padding-bottom: 10px;
+        }
+        @media (max-width:700px){
+            flex-direction: column;
+        }
+        
+        .paginaactiva{
+            background-color: #ff7099;
+            border: solid 1px #ff7099;
+            border-radius: 10px;
+            list-style: none;
+        }
+        .paginaactiva .a-navbar{
+            color: white;
+        }
+        
+        .li-navbar{
+            list-style: none;
+            background-color: #f7e9e9;
+            border-radius: 10px;
+            border: solid 1px #f7e9e9;
+            &:hover{
+                border:solid 1px #ff7099;
+            }
+        }
+        
+        .a-navbar{
+            text-decoration: none;
+            color: #ff7099;
+            font-size: 1.4rem;
+            display: block;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}

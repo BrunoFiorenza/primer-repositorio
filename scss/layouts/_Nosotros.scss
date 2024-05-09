@@ -1,0 +1,48 @@
+.main-Nosotros{
+    display: flex;
+    flex-direction: column;
+    background-color: #f7e9e9;
+    
+    .biografia{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        gap:50px;
+        @media (max-width:900px){
+            padding: 20px;
+            gap:20px;
+        }
+        
+        .fig-nos{
+            text-align: center;
+            
+            .img-Nosotros{
+                width: 200px;
+                border-radius: 100px;
+                border: solid 2px #121212;
+                @media (max-width:900px){
+                    width: 150px;
+                }
+            }
+        }
+        
+        .p-nos{
+            padding: 50px;
+            background-color: #f7c0cb;
+            border: solid 1px #ff7099;
+            font-size: 1.5rem;
+            text-align: center;
+            border-radius: 10px;
+            line-height: 2rem;
+            @media (max-width:900px){
+                font-size: 1.2rem;
+                padding: 20px;
+            }
+            @media (max-width:400px){
+                font-size: 1.1rem;
+                padding: 10px;
+                line-height: normal;
+            }
+        }
+    }
+}
