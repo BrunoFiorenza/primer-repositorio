@@ -105,9 +105,24 @@ header figure #logo {
 
 footer {
   background: linear-gradient(#f7c0cb, #ff7099);
-  text-align: center;
   padding: 50px;
   border: solid 1px #ff7099;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 400px) {
+  footer {
+    padding: 10px;
+  }
+}
+footer .li-footer {
+  list-style: none;
+}
+footer .a-footer {
+  text-decoration: none;
+  color: white;
 }
 footer .ig {
   color: white;
@@ -150,7 +165,7 @@ footer .fa-brands {
   scale: 1.01;
   box-shadow: 10px 10px 10px rgba(18, 18, 18, 0.5411764706);
   transition: 0.5s;
-  background-color: #ff7099;
+  background: linear-gradient(#f7c0cb, #ff7099);
   border: solid 1px #121212;
 }
 @media (max-width: 1366px) {
