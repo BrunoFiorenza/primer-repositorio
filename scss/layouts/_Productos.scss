@@ -1,6 +1,5 @@
 .main-produc{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     background-color: $principal;
     
     .Productos{
@@ -31,8 +30,7 @@
                 box-shadow: 10px 10px  10px #1212128a
             }
             @media (max-width:800px){
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 align-items: center;
                 padding: 20px;
                 width: 100%;
@@ -50,8 +48,7 @@
             }
             
             .info-produc{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 align-items: center;
                 gap:5px;
                 

@@ -1,11 +1,9 @@
 .main-Nosotros{
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     background-color: $principal;
     
     .biografia{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         padding: 50px;
         gap:50px;
         @media (max-width:900px){

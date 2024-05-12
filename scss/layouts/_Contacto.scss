@@ -1,7 +1,6 @@
 .main-contacto{
     background-color: $principal;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     
     .publicaciones{
         display: grid;

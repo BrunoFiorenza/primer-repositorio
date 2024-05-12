@@ -1,12 +1,10 @@
 .main-inicio{
     background-color: $principal;
     padding: 0px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     
     .inicio{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         gap: 2rem;
         padding:50px;
@@ -30,8 +28,7 @@
                 border:solid 1px #121212;
             }
             @media (max-width:1366px){
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 width: 75%;
             }
             @media (max-width:550px){

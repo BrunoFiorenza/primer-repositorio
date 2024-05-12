@@ -1,7 +1,6 @@
 .main-ubicacion{
     background-color: $principal;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     
     .mapa{
         padding: 50px;
