@@ -67,7 +67,6 @@
                 }
                 .boton-producto{
                     margin: 10px;
-                    padding: 10px;
                     border-radius: 10px;
                     width: 85%;
                     cursor: pointer;
@@ -77,6 +76,13 @@
                     box-shadow: 1px 1px 1px black;
                     &:active{
                     box-shadow: inset 1px 1px 1px black;
+                    }
+                    
+                    .a-button{
+                            display: block;
+                            padding: 10px;
+                            text-decoration: none;
+                            color: white;
                     }
                 }
             }

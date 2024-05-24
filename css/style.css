@@ -111,6 +111,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 150px;
 }
 @media (max-width: 400px) {
   footer {
@@ -396,7 +397,6 @@ footer .fa-brands {
 }
 .main-produc .Productos .Lista .info-produc .boton-producto {
   margin: 10px;
-  padding: 10px;
   border-radius: 10px;
   width: 85%;
   cursor: pointer;
@@ -407,6 +407,12 @@ footer .fa-brands {
 }
 .main-produc .Productos .Lista .info-produc .boton-producto:active {
   box-shadow: inset 1px 1px 1px black;
+}
+.main-produc .Productos .Lista .info-produc .boton-producto .a-button {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
