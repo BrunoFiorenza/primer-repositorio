@@ -1,0 +1,92 @@
+.main-produc{
+    @include flex-column;
+    background-color: $principal;
+    
+    .Productos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 50px;
+        padding: 50px;
+        @media (max-width:1366px){
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+        @media (max-width:600px){
+            padding: 25px;
+            gap: 25px;
+        }
+        
+        .Lista{
+            display: flex;
+            padding: 10px;
+            background-color: $secundario;
+            border: solid 2px $terciario;
+            border-radius: 50px;
+            &:hover{
+                scale: 1.05;
+                transition: 0.5s;
+                box-shadow: 10px 10px  10px #1212128a
+            }
+            @media (max-width:800px){
+                @include flex-column;
+                align-items: center;
+                padding: 20px;
+                width: 100%;
+            }
+            
+            .img-produc{
+                width: 100%;
+                border-radius: 50px;
+                border: solid 1px $terciario;
+                object-fit: cover;
+                max-width: 300px;
+                @media (max-width:800px){
+                    max-width: 100%;
+                }
+            }
+            
+            .info-produc{
+                @include flex-column;
+                align-items: center;
+                gap:5px;
+                
+                .p-produc{
+                    padding: 20px;
+                    margin: auto 0;
+                    letter-spacing: 0.1rem;
+                    line-height: 1.5rem;
+                    font-size: 1.3rem;
+                    @media (max-width:600px){
+                        font-size: 1.2rem;
+                        padding: 5px;
+                        line-height: normal;
+                        letter-spacing: normal;
+                    }
+                }
+                .boton-producto{
+                    margin: 10px;
+                    border-radius: 10px;
+                    width: 85%;
+                    cursor: pointer;
+                    background-color: $terciario;
+                    border: solid 1px $principal;
+                    color: $principal;
+                    box-shadow: 1px 1px 1px black;
+                    &:active{
+                    box-shadow: inset 1px 1px 1px black;
+                    }
+                    
+                    .a-button{
+                            display: block;
+                            padding: 10px;
+                            text-decoration: none;
+                            color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+

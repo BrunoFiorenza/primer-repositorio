@@ -1,0 +1,11 @@
+.main-ubicacion{
+    background-color: $principal;
+    @include flex-column;
+    
+    .mapa{
+        padding: 50px;
+        @media(max-width:500px){
+        padding: 25px;
+        }
+    }
+}
